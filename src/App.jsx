@@ -28,7 +28,7 @@ const API = {
                     <p>5%</p>
                 </div>
                 <div className="wind-speed">
-                    <p>2 MPH</p>
+                    2 MPH
                 </div>
             </div>
         </div>
