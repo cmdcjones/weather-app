@@ -22,7 +22,7 @@ const getLocationData = (event) => {
                     description: data.weather[0].description,
                     feelsLike: data.main.feels_like.toFixed(0),
                     humidity: data.main.humidity,
-                    windSpeed: data.wind.speed,
+                    windSpeed: data.wind.speed.toFixed(0),
                 });
             });
             setLocation('');
