@@ -1,6 +1,6 @@
 {
   "name": "weather-app",
-  "homepage": "https://cmdcjones.github.io/weather-app",
+  "homepage": "https://cmdcjones.github.io/weather-app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,11 +12,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
