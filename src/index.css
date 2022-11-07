@@ -47,6 +47,7 @@ h1 {
 }
 
 .get-location input {
+    color: #f7f8f9;
     padding: .7rem 1.5rem;
     font-size: 1.2rem;
     border-radius: 25px;
@@ -78,6 +79,10 @@ input::placeholder {
 .location p {
     font-size: 1.9rem;
     letter-spacing: 4px;
+}
+
+.description p:first-child {
+    text-transform: capitalize;
 }
 
 .bottom {
