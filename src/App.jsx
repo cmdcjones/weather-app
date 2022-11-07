@@ -20,7 +20,7 @@ const getLocationData = (event) => {
                     location: data.name,
                     temperature: data.main.temp.toFixed(0),
                     description: data.weather[0].description,
-                    feelsLike: data.main.feels_like,
+                    feelsLike: data.main.feels_like.toFixed(0),
                     humidity: data.main.humidity,
                     windSpeed: data.wind.speed,
                 });
@@ -49,26 +49,37 @@ const getLocationData = (event) => {
               <p>{data.location}</p>
             </div>
             <div className="temperature">
-              <h1>{data.temperature}&deg;F</h1>
+                { data.temperature ? <h1>{data.temperature}&deg;F</h1>
+                  : ""
+                }
             </div>
             <div className="description">
               <p>{data.description}</p>
             </div>
          </div>
+        { data.location ?
          <div className="bottom">
            <div className="feels-like">
-             <p className="bold">103&deg;F</p>
+             { data.feelsLike ?  <p className="bold">{data.feelsLike}&deg;F</p>
+               : ""
+             }
              <p className="small">Feels Like</p>
            </div>
            <div className="humidity">
-             <p className="bold">5%</p>
+             { data.humidity ? <p className="bold">{data.humidity}%</p>
+               : ""
+             }
              <p className="small">Humidity</p>
            </div>
            <div className="wind-speed">
-             <p className="bold">2 MPH</p>
+             { data.windSpeed ? <p className="bold">{data.windSpeed} MPH</p>
+               : ""
+             }
              <p className="small">Wind Speed</p>
            </div>
         </div>
+          : ""
+        }
       </div>
     </div>
   );
