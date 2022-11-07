@@ -15,7 +15,6 @@ const getLocationData = (event) => {
             fetch(URL)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 setData({
                     location: data.name,
                     temperature: data.main.temp.toFixed(0),
