@@ -1,4 +1,4 @@
-# Weather App with OpenWeather API
+# ClearSky powered by OpenWeather API
 
 - Created with React
 - Built with Vite :zap:
